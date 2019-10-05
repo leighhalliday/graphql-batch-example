@@ -126,3 +126,13 @@ mutation {
   }
 }
 ```
+
+## Performance
+
+- Batching queries
+- Complexity
+- Depth
+
+## Authorization
+
+Context...
