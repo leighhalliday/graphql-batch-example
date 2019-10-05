@@ -3,8 +3,8 @@ class Mutations::CreateEvent < Mutations::BaseMutation
 
   argument :name, String, required: true
   argument :category_id, ID, required: true
-  argument :start_time, String, required: true
-  argument :end_time, String, required: true
+  argument :start_time, GraphQL::Types::ISO8601DateTime, required: true
+  argument :end_time, GraphQL::Types::ISO8601DateTime, required: true
 
   field :event, Types::EventType, null: true
   field :errors, [String], null: false

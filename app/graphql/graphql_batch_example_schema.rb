@@ -4,5 +4,5 @@ class GraphqlBatchExampleSchema < GraphQL::Schema
   use(GraphQL::Batch)
 
   max_depth 5
-  max_complexity 100
+  max_complexity 200
 end

@@ -1,4 +1,4 @@
-# Efficient GraphQL queries in Rails
+# OneEleven Dev Peer Group
 
 ## Queries
 
@@ -126,6 +126,15 @@ mutation {
   }
 }
 ```
+
+## Types
+
+- Root types (query, mutation, subscription)
+- Scalar types
+- Custom types
+- Nullable
+- Input types
+- Lists / Unions
 
 ## Performance
 

@@ -7,7 +7,7 @@ class Types::EventType < Types::BaseObject
 
   field :id, ID, null: false
   field :name, String, null: false
-  field :start_time, String, null: false, complexity: 95
+  field :start_time, GraphQL::Types::ISO8601DateTime, null: false, complexity: 195
 
   field :category, Types::CategoryType, null: false
 
