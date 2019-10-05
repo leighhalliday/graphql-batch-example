@@ -10,14 +10,17 @@ class Types::CategoryType < Types::BaseObject
   end
 
   def events(first:)
+    object.events.order(id: :desc).limit(first)
+
     # ForeignKeyLoader.for(Event, :category_id, merge: -> { order(id: :asc) }).
     #   load(object.id).then do |records|
     #     records.first(first)
     #   end
-    WindowKeyLoader.for(Event, :category_id,
-      limit: first,
-      order_col: :start_time,
-      order_dir: :desc
-    ).load(object.id)
+
+    # WindowKeyLoader.for(Event, :category_id,
+    #   limit: first,
+    #   order_col: :start_time,
+    #   order_dir: :desc
+    # ).load(object.id)
   end
 end
