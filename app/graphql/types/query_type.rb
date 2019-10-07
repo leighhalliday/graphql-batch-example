@@ -15,6 +15,7 @@ module Types
     end
 
     field :categories, [Types::CategoryType], null: false, description: "All the categories"
+
     def categories
       Category.all
     end

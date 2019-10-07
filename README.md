@@ -1,6 +1,6 @@
 # OneEleven Dev Peer Group
 
-## Queries
+## Queries (Leigh)
 
 Query all the events and their categories:
 
@@ -36,7 +36,7 @@ The results:
 }
 ```
 
-Query all categories and their first 5 events:
+Query all categories and their first 5 events... try changing the number 5 to a string "5" and see what happens.
 
 ```graphql
 query {
@@ -90,7 +90,33 @@ The results:
 }
 ```
 
-## Mutations
+## Schema (Leigh)
+
+Defines the contract of the GraphQL API.
+
+- Root types (query, mutation, subscription)
+- Scalar types
+- Custom types
+- Nullable
+- Input types
+- Lists / Unions
+
+## Resolvers (Sean)
+
+- We need to generate schema (either manually, or via code in Ruby)
+- Resolver resolve (produce data for) one field and level at time
+- Resolvers has 3 pieces of data available to it:
+  - Object
+  - Arguments
+  - Context
+
+## React, Apollo & GraphQL (Sean)
+
+Create your Apollo client... make it available via context
+Define Query
+Perform query using useQuery hook
+
+## Mutations (Leigh)
 
 Create a Category:
 
@@ -127,21 +153,13 @@ mutation {
 }
 ```
 
-## Types
-
-- Root types (query, mutation, subscription)
-- Scalar types
-- Custom types
-- Nullable
-- Input types
-- Lists / Unions
-
-## Performance
+## Performance (Leigh)
 
 - Batching queries
 - Complexity
 - Depth
 
-## Authorization
+## Other Topics
 
-Context...
+- Authorization
+- Pagination
