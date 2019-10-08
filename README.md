@@ -125,21 +125,32 @@ More [details here](https://graphql.org/learn/schema/).
 
 ## Resolvers (Sean)
 
+Resolvers are helper functions that assist the server to resolve queries and mutations. The GraphQL server traverses through this query to create the query response. Resolver resolve (produce data for) one field and level at time.
+
 Details for Ruby [found here](https://graphql-ruby.org/fields/resolvers.html).
 
-- Resolver resolve (produce data for) one field and level at time
-- Resolvers has 3 pieces of data available to it:
-  - Object (Parent)
-  - Arguments (Field Level)
-  - Context (Global)
+Resolvers have 3 pieces of data available to them:
+
+- Object (Parent)
+- Arguments (Field Level)
+- Context (Global)
 
 ## React, Apollo & GraphQL (Sean)
 
-Create your Apollo client... make it available via context
-Define Query
-Perform query using useQuery hook
+Two Important Libraries:
+
+1. [graphql-tag](https://github.com/apollographql/graphql-tag), parses the template literal string into GraphQL Abstract Syntax Tree
+2. [apollo-client](https://github.com/apollographql/apollo-client), comes with lots of handy features when working with GraphQL (ex. automatic loading and error state tracking)
+
+Steps to make a Query:
+
+1. Create your Apollo client... make it available via context
+2. Define Query
+3. Perform query using useQuery hook
 
 ## Mutations (Leigh)
+
+A query is similar to a GET request (reading data), but a mutation is similar to PUT, POST, DELETE requests... it is all about changing data.
 
 Create a Category:
 
