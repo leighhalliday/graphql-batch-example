@@ -17,6 +17,7 @@
 - Backend: https://github.com/leighhalliday/graphql-batch-example
 - Graphiql: https://dev-peer-group-graphql.herokuapp.com/graphiql
 - Frontend: https://github.com/leighhalliday/graphql-react-demo
+- Demo: https://oneeleven-graphql-react.netlify.com/
 
 ## Queries (Leigh)
 
